@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+#wrapper {
+    width: 500px;
+}
+
+.entry {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 200px;
+    margin-right: 50px;
+    padding: 5px;
+    width: 200px;
+}
+
+.cover {
+    height: 150px;
+    width: 200px;
+}
+
+.cover img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.intro p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
