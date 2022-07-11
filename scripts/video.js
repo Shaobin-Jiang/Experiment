@@ -1,6 +1,5 @@
 const videoContent = ["陶瓷", "啤酒", "火锅", "行李箱"];
-// const popupWindowTiming = [35, 49, 17, 38];
-const popupWindowTiming = [1, 1, 1, 1];
+const popupWindowTiming = [35, 49, 17, 38];
 
 let screenWidth = document.documentElement.clientWidth,
     screenHeight = document.documentElement.clientHeight,
