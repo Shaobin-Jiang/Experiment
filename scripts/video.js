@@ -1,4 +1,5 @@
 const videoContent = ["陶瓷", "啤酒", "火锅", "行李箱"];
+const videoTitle = ["陶瓷-十二生肖", "啤酒-爱情公寓", "火锅-舌尖上的中国", "行李箱-向往的生活"];
 const popupWindowTiming = [35, 49, 17, 38];
 
 let screenWidth = document.documentElement.clientWidth,
@@ -20,7 +21,7 @@ let imageSource = imageOrder[videoOrder.indexOf(source)];
 let optionList = document.querySelectorAll("#list .option");
 for (let i = 0; i < 4; i++) {
     let elem = optionList[i];
-    elem.innerHTML = `<a target="_self" href="${window.location.href.replace(/videoID=(\d)+/g, "videoID=" + videoOrder[i])}">${videoContent[videoOrder[i]]}</a>`;
+    elem.innerHTML = `<a target="_self" href="${window.location.href.replace(/videoID=(\d)+/g, "videoID=" + videoOrder[i])}">${videoTitle[videoOrder[i]]}</a>`;
     if (videoOrder[i] == source) {
         elem.classList.add("highlight");
     }
