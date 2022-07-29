@@ -1,5 +1,5 @@
 const videoContent = ["陶瓷", "啤酒", "火锅", "行李箱"];
-const videoTitle = ["陶瓷-十二生肖", "啤酒-爱情公寓", "火锅-舌尖上的中国", "行李箱-向往的生活"];
+const videoTitle = ["十二生肖", "爱情公寓", "舌尖上的中国", "向往的生活"];
 const popupWindowTiming = [35, 49, 17, 38];
 
 let screenWidth = document.documentElement.clientWidth,
