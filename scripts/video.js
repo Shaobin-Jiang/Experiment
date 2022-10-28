@@ -1,6 +1,7 @@
 const videoContent = ["陶瓷", "啤酒", "火锅", "行李箱"];
 const videoTitle = ["十二生肖", "爱情公寓", "舌尖上的中国", "向往的生活"];
 const popupWindowTiming = [35, 49, 17, 38];
+// const popupWindowTiming = [1, 1, 1, 1];
 
 let screenWidth = document.documentElement.clientWidth,
     screenHeight = document.documentElement.clientHeight,
@@ -33,7 +34,7 @@ let playedTime = 0;
 new Promise(function (resolve) {
     setTimeout(function () {
         video.src = `./videos/${videoContent[source]}.mp4`;
-        document.querySelector("#popup").innerHTML = `<img src="./images/${videoContent[imageSource]}.jpg" width="100%">`;
+        document.querySelector("#popup").innerHTML = `<img src="./images/${videoContent[imageSource]}.jpg" height="100%">`;
         // video.src = `https://gcore.jsdelivr.net/gh/Shaobin-Jiang/experiment/videos/${videoContent[source]}.mp4`;
         // document.querySelector("#popup").innerHTML = `<img src="https://gcore.jsdelivr.net/gh/Shaobin-Jiang/experiment/images/${videoContent[imageSource]}.jpg" width="100%">`;
         resolve("Done");
