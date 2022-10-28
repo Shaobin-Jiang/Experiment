@@ -32,8 +32,10 @@ let playedTime = 0;
 
 new Promise(function (resolve) {
     setTimeout(function () {
-        video.src = `https://gcore.jsdelivr.net/gh/Shaobin-Jiang/experiment/videos/${videoContent[source]}.mp4`;
-        document.querySelector("#popup").innerHTML = `<img src="https://gcore.jsdelivr.net/gh/Shaobin-Jiang/experiment/images/${videoContent[imageSource]}.jpg" width="100%">`;
+        video.src = `./videos/${videoContent[source]}.mp4`;
+        document.querySelector("#popup").innerHTML = `<img src="./images/${videoContent[imageSource]}.jpg" width="100%">`;
+        // video.src = `https://gcore.jsdelivr.net/gh/Shaobin-Jiang/experiment/videos/${videoContent[source]}.mp4`;
+        // document.querySelector("#popup").innerHTML = `<img src="https://gcore.jsdelivr.net/gh/Shaobin-Jiang/experiment/images/${videoContent[imageSource]}.jpg" width="100%">`;
         resolve("Done");
     });
 }).then(function () {
